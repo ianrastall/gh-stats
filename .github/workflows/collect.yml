@@ -1,0 +1,39 @@
+name: Collect traffic
+
+on:
+  schedule:
+    - cron: "17 5 * * *" # daily; GitHub only keeps 14 days of traffic
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: collect
+  cancel-in-progress: false
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Fetch traffic
+        run: node scripts/collect.mjs
+        env:
+          GH_TOKEN: ${{ secrets.TRAFFIC_TOKEN }}
+          INCLUDE_PRIVATE: ${{ vars.INCLUDE_PRIVATE }}
+          INCLUDE_FORKS: ${{ vars.INCLUDE_FORKS }}
+          EXCLUDE_REPOS: ${{ vars.EXCLUDE_REPOS }}
+
+      - name: Commit data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/data/traffic.json
+          if git diff --cached --quiet; then
+            echo "No changes."
+          else
+            git commit -m "Update traffic data"
+            git push
+          fi
