@@ -1,0 +1,451 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GitHub traffic</title>
+<style>
+  :root {
+    color-scheme: light;
+    --page: #f9f9f7;
+    --surface: #fcfcfb;
+    --text-primary: #0b0b0b;
+    --text-secondary: #52514e;
+    --text-muted: #898781;
+    --grid: #e1e0d9;
+    --axis: #c3c2b7;
+    --border: rgba(11, 11, 11, 0.10);
+    --hover: rgba(11, 11, 11, 0.04);
+    --series-1: #2a78d6;
+    --series-2: #eb6834;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      color-scheme: dark;
+      --page: #0d0d0d;
+      --surface: #1a1a19;
+      --text-primary: #ffffff;
+      --text-secondary: #c3c2b7;
+      --text-muted: #898781;
+      --grid: #2c2c2a;
+      --axis: #383835;
+      --border: rgba(255, 255, 255, 0.10);
+      --hover: rgba(255, 255, 255, 0.05);
+      --series-1: #3987e5;
+      --series-2: #d95926;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--page);
+    color: var(--text-primary);
+    font: 14px/1.45 system-ui, -apple-system, "Segoe UI", sans-serif;
+  }
+  main { max-width: 1040px; margin: 0 auto; padding: 24px 16px 48px; }
+  a { color: inherit; }
+  h1 { font-size: 20px; font-weight: 600; margin: 0; }
+  h2 { font-size: 14px; font-weight: 600; margin: 0; }
+  .sub { color: var(--text-secondary); margin: 2px 0 0; }
+  .muted { color: var(--text-muted); }
+
+  header { display: flex; flex-wrap: wrap; gap: 12px 24px; align-items: flex-end; justify-content: space-between; margin-bottom: 16px; }
+  .filters { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+  .seg { display: inline-flex; border: 1px solid var(--border); border-radius: 8px; overflow: hidden; background: var(--surface); }
+  .seg button {
+    font: inherit; color: var(--text-secondary); background: none; border: 0; padding: 5px 12px; cursor: pointer;
+  }
+  .seg button + button { border-left: 1px solid var(--border); }
+  .seg button:hover { background: var(--hover); }
+  .seg button[aria-pressed="true"] { color: var(--text-primary); font-weight: 600; background: var(--hover); }
+  select {
+    font: inherit; color: var(--text-primary); background: var(--surface);
+    border: 1px solid var(--border); border-radius: 8px; padding: 5px 8px; max-width: 220px;
+  }
+
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 16px; min-width: 0; }
+  .tiles { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 12px; }
+  .tile .label { color: var(--text-secondary); font-size: 13px; }
+  .tile .value { font-size: 28px; font-weight: 600; line-height: 1.2; margin-top: 2px; }
+  .charts { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 12px; }
+  .lists { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 12px; }
+  @media (max-width: 760px) {
+    .tiles { grid-template-columns: repeat(2, 1fr); }
+    .charts, .lists { grid-template-columns: 1fr; }
+  }
+
+  .chart-head { display: flex; flex-wrap: wrap; gap: 4px 16px; justify-content: space-between; align-items: baseline; margin-bottom: 8px; }
+  .legend { display: flex; gap: 14px; color: var(--text-secondary); font-size: 12px; }
+  .legend i { display: inline-block; width: 12px; height: 2px; border-radius: 1px; vertical-align: middle; margin-right: 6px; }
+  .plot { position: relative; }
+  .plot svg { display: block; width: 100%; height: 220px; overflow: visible; }
+  .plot text { fill: var(--text-muted); font-size: 11px; font-variant-numeric: tabular-nums; }
+  .tip {
+    position: absolute; top: 0; pointer-events: none; display: none; white-space: nowrap;
+    background: var(--surface); border: 1px solid var(--border); border-radius: 8px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12); padding: 6px 10px; font-size: 12px;
+  }
+  .tip .date { color: var(--text-secondary); margin-bottom: 2px; }
+  .tip .row { display: flex; gap: 12px; justify-content: space-between; }
+  .tip .row b { font-variant-numeric: tabular-nums; }
+  .tip i { display: inline-block; width: 8px; height: 8px; border-radius: 50%; margin-right: 6px; }
+
+  .table-wrap { overflow-x: auto; margin: 8px -16px -8px; }
+  table { width: 100%; border-collapse: collapse; }
+  th, td { padding: 7px 16px; text-align: right; white-space: nowrap; }
+  th:first-child, td:first-child { text-align: left; }
+  td { border-top: 1px solid var(--grid); font-variant-numeric: tabular-nums; }
+  th { color: var(--text-secondary); font-weight: 500; font-size: 12px; }
+  th button { font: inherit; color: inherit; background: none; border: 0; padding: 0; cursor: pointer; }
+  th button:hover, th[aria-sort] button { color: var(--text-primary); }
+  tbody tr.repo { cursor: pointer; }
+  tbody tr.repo:hover, tbody tr.repo.selected { background: var(--hover); }
+  td.name { max-width: 320px; overflow: hidden; text-overflow: ellipsis; }
+  td.spark svg { display: block; margin-left: auto; }
+  .ext { color: var(--text-muted); text-decoration: none; margin-left: 6px; }
+  .ext:hover { color: var(--text-primary); }
+
+  footer { color: var(--text-muted); font-size: 12px; margin-top: 20px; }
+  .empty { padding: 48px 16px; text-align: center; color: var(--text-secondary); }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <div>
+      <h1 id="title">GitHub traffic</h1>
+      <p class="sub" id="subtitle">Loading…</p>
+    </div>
+    <div class="filters">
+      <select id="repo" aria-label="Repository"></select>
+      <div class="seg" id="range" role="group" aria-label="Date range">
+        <button data-days="14">14d</button>
+        <button data-days="30">30d</button>
+        <button data-days="90">90d</button>
+        <button data-days="0">All</button>
+      </div>
+    </div>
+  </header>
+
+  <div id="app" hidden>
+    <section class="tiles" id="tiles"></section>
+
+    <section class="charts">
+      <div class="card">
+        <div class="chart-head">
+          <h2>Views per day</h2>
+          <div class="legend"><span><i style="background:var(--series-1)"></i>Views</span><span><i style="background:var(--series-2)"></i>Unique visitors</span></div>
+        </div>
+        <div class="plot" id="views-chart"></div>
+      </div>
+      <div class="card">
+        <div class="chart-head">
+          <h2>Clones per day</h2>
+          <div class="legend"><span><i style="background:var(--series-1)"></i>Clones</span><span><i style="background:var(--series-2)"></i>Unique cloners</span></div>
+        </div>
+        <div class="plot" id="clones-chart"></div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Repositories</h2>
+      <div class="table-wrap">
+        <table id="repos">
+          <thead></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="lists">
+      <div class="card">
+        <h2>Top referrers <span class="muted" style="font-weight:400">· last 14 days</span></h2>
+        <div class="table-wrap"><table id="referrers"></table></div>
+      </div>
+      <div class="card">
+        <h2>Popular pages <span class="muted" style="font-weight:400">· last 14 days</span></h2>
+        <div class="table-wrap"><table id="paths"></table></div>
+      </div>
+    </section>
+
+    <footer>
+      Days are UTC. “Unique” counts are per day and summed, so a visitor on two days counts twice.
+      Built with <a href="https://github.com/ianrastall/gh-stats">gh-stats</a>.
+    </footer>
+  </div>
+  <div id="empty" class="card empty" hidden></div>
+</main>
+
+<script>
+const $ = (id) => document.getElementById(id);
+const fmt = (n) => n.toLocaleString("en-US");
+const DAY = 86400000;
+const iso = (t) => new Date(t).toISOString().slice(0, 10);
+const shortDate = (d) => new Date(d + "T00:00:00Z").toLocaleDateString("en-US", { month: "short", day: "numeric", timeZone: "UTC" });
+const longDate = (d) => new Date(d + "T00:00:00Z").toLocaleDateString("en-US", { weekday: "short", month: "short", day: "numeric", year: "numeric", timeZone: "UTC" });
+
+function el(tag, props = {}, ...children) {
+  const node = document.createElement(tag);
+  for (const [k, v] of Object.entries(props)) {
+    if (k === "class") node.className = v;
+    else if (k.startsWith("on")) node.addEventListener(k.slice(2), v);
+    else if (v != null) node.setAttribute(k, v);
+  }
+  node.append(...children);
+  return node;
+}
+
+const state = { data: null, repo: "", days: 30, sort: "views", desc: true };
+
+// ---- data shaping ---------------------------------------------------------
+
+function allDates() {
+  let min = null, max = null;
+  for (const r of Object.values(state.data.repos)) {
+    for (const d of [...Object.keys(r.views), ...Object.keys(r.clones)]) {
+      if (!min || d < min) min = d;
+      if (!max || d > max) max = d;
+    }
+  }
+  return { min, max };
+}
+
+function dateRange() {
+  const { min, max } = allDates();
+  if (!min) return [];
+  const end = Date.parse(max);
+  let start = Date.parse(min);
+  if (state.days) start = Math.max(start, end - (state.days - 1) * DAY);
+  const dates = [];
+  for (let t = start; t <= end; t += DAY) dates.push(iso(t));
+  return dates;
+}
+
+// [count, uniques] per date for one repo's views or clones; missing days are zero.
+const series = (days, dates) => dates.map((d) => days[d] ?? [0, 0]);
+
+function totals(repo, dates) {
+  const sum = (rows, i) => rows.reduce((a, r) => a + r[i], 0);
+  const v = series(repo.views, dates), c = series(repo.clones, dates);
+  return { views: sum(v, 0), visitors: sum(v, 1), clones: sum(c, 0), cloners: sum(c, 1), daily: v.map((r) => r[0]) };
+}
+
+function selectedRepos() {
+  const repos = state.data.repos;
+  return state.repo && repos[state.repo] ? [repos[state.repo]] : Object.values(repos);
+}
+
+// ---- charts ---------------------------------------------------------------
+
+function niceMax(v) {
+  if (v <= 4) return 4;
+  const mag = 10 ** Math.floor(Math.log10(v));
+  for (const m of [1, 2, 4, 5, 8, 10]) if (v <= m * mag) return m * mag;
+}
+
+const SVG = "http://www.w3.org/2000/svg";
+function svg(tag, attrs = {}) {
+  const node = document.createElementNS(SVG, tag);
+  for (const [k, v] of Object.entries(attrs)) node.setAttribute(k, v);
+  return node;
+}
+
+function lineChart(host, dates, lines) {
+  host.replaceChildren();
+  const W = host.clientWidth || 480, H = 220;
+  const m = { top: 8, right: 12, bottom: 22, left: 40 };
+  const pw = W - m.left - m.right, ph = H - m.top - m.bottom;
+  const yMax = niceMax(Math.max(1, ...lines.flatMap((l) => l.values)));
+  const x = (i) => m.left + (dates.length > 1 ? (i / (dates.length - 1)) * pw : pw / 2);
+  const y = (v) => m.top + ph - (v / yMax) * ph;
+
+  const root = svg("svg", { viewBox: `0 0 ${W} ${H}`, role: "img", "aria-label": lines.map((l) => l.name).join(" and ") + " per day" });
+
+  for (let i = 0; i <= 4; i++) {
+    const v = (yMax / 4) * i, yy = y(v);
+    root.append(svg("line", { x1: m.left, x2: W - m.right, y1: yy, y2: yy, stroke: i ? "var(--grid)" : "var(--axis)", "stroke-width": 1 }));
+    const t = svg("text", { x: m.left - 8, y: yy + 4, "text-anchor": "end" });
+    t.textContent = fmt(v);
+    root.append(t);
+  }
+
+  const tickCount = Math.min(dates.length, Math.max(2, Math.floor(pw / 80)));
+  for (let k = 0; k < tickCount; k++) {
+    const i = tickCount > 1 ? Math.round((k / (tickCount - 1)) * (dates.length - 1)) : 0;
+    const t = svg("text", { x: x(i), y: H - 4, "text-anchor": k === 0 ? "start" : k === tickCount - 1 ? "end" : "middle" });
+    t.textContent = shortDate(dates[i]);
+    root.append(t);
+  }
+
+  lines.forEach((line, li) => {
+    const pts = line.values.map((v, i) => `${x(i).toFixed(1)},${y(v).toFixed(1)}`);
+    if (li === 0 && pts.length > 1) {
+      root.append(svg("path", {
+        d: `M${x(0)},${y(0)}L${pts.join("L")}L${x(dates.length - 1)},${y(0)}Z`,
+        fill: line.color, "fill-opacity": 0.1,
+      }));
+    }
+    root.append(svg("path", {
+      d: "M" + pts.join("L"), fill: "none", stroke: line.color,
+      "stroke-width": 2, "stroke-linejoin": "round", "stroke-linecap": "round",
+    }));
+    if (pts.length === 1) root.append(svg("circle", { cx: x(0), cy: y(line.values[0]), r: 4, fill: line.color }));
+  });
+
+  // hover layer: crosshair, ringed dots and a tooltip listing every series
+  const cross = svg("line", { y1: m.top, y2: m.top + ph, stroke: "var(--axis)", "stroke-width": 1, visibility: "hidden" });
+  const dots = lines.map((l) => svg("circle", { r: 4, fill: l.color, stroke: "var(--surface)", "stroke-width": 2, visibility: "hidden" }));
+  const hit = svg("rect", { x: m.left, y: m.top, width: pw, height: ph, fill: "transparent" });
+  root.append(cross, ...dots, hit);
+  const tip = el("div", { class: "tip" });
+  host.append(root, tip);
+
+  const hide = () => {
+    tip.style.display = "none";
+    [cross, ...dots].forEach((n) => n.setAttribute("visibility", "hidden"));
+  };
+  hit.addEventListener("pointerleave", hide);
+  hit.addEventListener("pointermove", (e) => {
+    const box = root.getBoundingClientRect();
+    const px = ((e.clientX - box.left) / box.width) * W;
+    const i = dates.length > 1 ? Math.max(0, Math.min(dates.length - 1, Math.round(((px - m.left) / pw) * (dates.length - 1)))) : 0;
+    cross.setAttribute("x1", x(i));
+    cross.setAttribute("x2", x(i));
+    cross.setAttribute("visibility", "visible");
+    lines.forEach((l, li) => {
+      dots[li].setAttribute("cx", x(i));
+      dots[li].setAttribute("cy", y(l.values[i]));
+      dots[li].setAttribute("visibility", "visible");
+    });
+    tip.replaceChildren(
+      el("div", { class: "date" }, longDate(dates[i])),
+      ...lines.map((l) => el("div", { class: "row" },
+        el("span", {}, el("i", { style: `background:${l.color}` }), l.name),
+        el("b", {}, fmt(l.values[i])))),
+    );
+    tip.style.display = "block";
+    const cx = (x(i) / W) * box.width;
+    const flip = cx + tip.offsetWidth + 16 > box.width;
+    tip.style.left = (flip ? cx - tip.offsetWidth - 12 : cx + 12) + "px";
+  });
+}
+
+function sparkline(values) {
+  const W = 96, H = 22, max = Math.max(1, ...values);
+  const node = svg("svg", { width: W, height: H, viewBox: `0 0 ${W} ${H}`, "aria-hidden": "true" });
+  if (values.length < 2) return node;
+  const pts = values.map((v, i) => `${((i / (values.length - 1)) * (W - 2) + 1).toFixed(1)},${(H - 2 - (v / max) * (H - 4)).toFixed(1)}`);
+  node.append(svg("path", { d: "M" + pts.join("L"), fill: "none", stroke: "var(--series-1)", "stroke-width": 1.5, "stroke-linejoin": "round", "stroke-linecap": "round" }));
+  return node;
+}
+
+// ---- rendering ------------------------------------------------------------
+
+const COLUMNS = [
+  ["name", "Repository"], ["views", "Views"], ["visitors", "Unique visitors"],
+  ["clones", "Clones"], ["cloners", "Unique cloners"], ["stars", "Stars"],
+];
+
+function render() {
+  const { data } = state;
+  const dates = dateRange();
+  const picked = selectedRepos();
+
+  for (const b of $("range").children) b.setAttribute("aria-pressed", String(+b.dataset.days === state.days));
+  $("repo").value = state.repo;
+
+  const sumSeries = (key, i) => dates.map((d) => picked.reduce((a, r) => a + (r[key][d]?.[i] ?? 0), 0));
+  const views = sumSeries("views", 0), visitors = sumSeries("views", 1);
+  const clones = sumSeries("clones", 0), cloners = sumSeries("clones", 1);
+  const total = (a) => a.reduce((x, y) => x + y, 0);
+
+  $("tiles").replaceChildren(...[
+    ["Views", views], ["Unique visitors", visitors], ["Clones", clones], ["Unique cloners", cloners],
+  ].map(([label, values]) => el("div", { class: "card tile" },
+    el("div", { class: "label" }, label),
+    el("div", { class: "value" }, fmt(total(values))))));
+
+  lineChart($("views-chart"), dates, [
+    { name: "Views", color: "var(--series-1)", values: views },
+    { name: "Unique visitors", color: "var(--series-2)", values: visitors },
+  ]);
+  lineChart($("clones-chart"), dates, [
+    { name: "Clones", color: "var(--series-1)", values: clones },
+    { name: "Unique cloners", color: "var(--series-2)", values: cloners },
+  ]);
+
+  // repo table
+  const rows = Object.entries(data.repos).map(([name, r]) => ({ name, stars: r.stars ?? 0, ...totals(r, dates) }));
+  const dir = state.desc ? -1 : 1;
+  rows.sort((a, b) => (state.sort === "name" ? a.name.localeCompare(b.name) : a[state.sort] - b[state.sort]) * dir || a.name.localeCompare(b.name));
+
+  $("repos").tHead.replaceChildren(el("tr", {},
+    ...COLUMNS.map(([key, label]) => el("th", { "aria-sort": state.sort === key ? (state.desc ? "descending" : "ascending") : null },
+      el("button", { onclick: () => {
+        if (state.sort === key) state.desc = !state.desc;
+        else { state.sort = key; state.desc = key !== "name"; }
+        render();
+      } }, label + (state.sort === key ? (state.desc ? " ↓" : " ↑") : "")))),
+    el("th", {}, "Views trend")));
+
+  $("repos").tBodies[0].replaceChildren(...rows.map((r) => {
+    const link = el("a", { class: "ext", href: `https://github.com/${data.owner}/${r.name}`, title: "Open on GitHub", onclick: (e) => e.stopPropagation() }, "↗");
+    return el("tr", { class: "repo" + (state.repo === r.name ? " selected" : ""), onclick: () => { state.repo = state.repo === r.name ? "" : r.name; render(); } },
+      el("td", { class: "name" }, r.name, link),
+      el("td", {}, fmt(r.views)), el("td", {}, fmt(r.visitors)),
+      el("td", {}, fmt(r.clones)), el("td", {}, fmt(r.cloners)), el("td", {}, fmt(r.stars)),
+      el("td", { class: "spark" }, sparkline(r.daily)));
+  }));
+
+  // referrers and popular pages (14-day snapshots from GitHub, summed across the selection)
+  const tally = (key, id) => {
+    const map = new Map();
+    for (const r of picked) for (const item of r[key] ?? []) {
+      const cur = map.get(item[id]) ?? { ...item, count: 0, uniques: 0 };
+      cur.count += item.count; cur.uniques += item.uniques;
+      map.set(item[id], cur);
+    }
+    return [...map.values()].sort((a, b) => b.count - a.count).slice(0, 10);
+  };
+  const list = (table, items, first, cell) => table.replaceChildren(
+    el("thead", {}, el("tr", {}, el("th", {}, first), el("th", {}, "Views"), el("th", {}, "Unique"))),
+    el("tbody", {}, ...(items.length
+      ? items.map((it) => el("tr", {}, el("td", { class: "name" }, cell(it)), el("td", {}, fmt(it.count)), el("td", {}, fmt(it.uniques))))
+      : [el("tr", {}, el("td", { colspan: 3, class: "muted" }, "Nothing in the last 14 days"))])));
+  list($("referrers"), tally("referrers", "referrer"), "Site", (it) => it.referrer);
+  list($("paths"), tally("paths", "path"), "Page", (it) => el("a", { href: "https://github.com" + it.path, title: it.title }, it.path));
+}
+
+async function init() {
+  let data;
+  try {
+    const res = await fetch("data/traffic.json", { cache: "no-cache" });
+    if (!res.ok) throw new Error(res.status);
+    data = await res.json();
+  } catch {
+    $("subtitle").textContent = "";
+    $("empty").hidden = false;
+    $("empty").textContent = "No data yet. Run the “Collect traffic” workflow to fetch the first snapshot.";
+    return;
+  }
+  state.data = data;
+  const count = Object.keys(data.repos).length;
+  document.title = `GitHub traffic · ${data.owner}`;
+  $("title").textContent = `GitHub traffic · ${data.owner}`;
+  $("subtitle").textContent = `${count} repositories · updated ${new Date(data.updated).toLocaleString("en-US", { dateStyle: "medium", timeStyle: "short" })}`;
+  $("repo").append(el("option", { value: "" }, "All repositories"), ...Object.keys(data.repos).map((n) => el("option", { value: n }, n)));
+  $("repo").addEventListener("change", (e) => { state.repo = e.target.value; render(); });
+  $("range").addEventListener("click", (e) => {
+    if (e.target.dataset.days == null) return;
+    state.days = +e.target.dataset.days;
+    render();
+  });
+  let timer;
+  window.addEventListener("resize", () => { clearTimeout(timer); timer = setTimeout(render, 100); });
+  $("app").hidden = false;
+  render();
+}
+init();
+</script>
+</body>
+</html>
