@@ -1,6 +1,6 @@
 {
  "owner": "ianrastall",
- "updated": "2026-10-06T00:17:03.714Z",
+ "updated": "2026-10-06T05:30:52.229Z",
  "repos": {
   "3-0-thursday-archive": {
    "private": false,
@@ -1717,6 +1717,10 @@
     "2026-10-04": [
      0,
      0
+    ],
+    "2026-10-05": [
+     0,
+     0
     ]
    },
    "clones": {
@@ -1773,6 +1777,10 @@
      0
     ],
     "2026-10-04": [
+     0,
+     0
+    ],
+    "2026-10-05": [
      0,
      0
     ]
@@ -2748,6 +2756,10 @@
     "2026-10-04": [
      0,
      0
+    ],
+    "2026-10-05": [
+     0,
+     0
     ]
    },
    "clones": {
@@ -2806,6 +2818,10 @@
     "2026-10-04": [
      4,
      4
+    ],
+    "2026-10-05": [
+     3,
+     3
     ]
    },
    "referrers": [],
@@ -3009,6 +3025,10 @@
     "2026-10-04": [
      0,
      0
+    ],
+    "2026-10-05": [
+     0,
+     0
     ]
    },
    "clones": {
@@ -3067,6 +3087,10 @@
     "2026-10-04": [
      0,
      0
+    ],
+    "2026-10-05": [
+     23,
+     9
     ]
    },
    "referrers": [
@@ -3157,6 +3181,10 @@
     "2026-10-04": [
      3,
      1
+    ],
+    "2026-10-05": [
+     1,
+     1
     ]
    },
    "clones": {
@@ -3215,39 +3243,25 @@
     "2026-10-04": [
      178,
      95
+    ],
+    "2026-10-05": [
+     19,
+     11
     ]
    },
    "referrers": [
     {
      "referrer": "reddit.com",
-     "count": 1,
-     "uniques": 1
+     "count": 2,
+     "uniques": 2
     }
    ],
    "paths": [
     {
      "path": "/ianrastall/lore",
      "title": "Overview",
-     "count": 6,
+     "count": 3,
      "uniques": 2
-    },
-    {
-     "path": "/ianrastall/lore/releases/tag/1.0.0",
-     "title": "/releases/tag/1.0.0",
-     "count": 2,
-     "uniques": 1
-    },
-    {
-     "path": "/ianrastall/lore/commits/main",
-     "title": "/commits/main",
-     "count": 1,
-     "uniques": 1
-    },
-    {
-     "path": "/ianrastall/lore/compare/1.0.0...main",
-     "title": "/compare/1.0.0...main",
-     "count": 1,
-     "uniques": 1
     },
     {
      "path": "/ianrastall/lore/releases/tag/1.8.0",
