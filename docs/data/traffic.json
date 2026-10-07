@@ -1,6 +1,6 @@
 {
  "owner": "ianrastall",
- "updated": "2026-10-07T05:32:00.707Z",
+ "updated": "2026-10-07T09:39:25.055Z",
  "repos": {
   "3-0-thursday-archive": {
    "private": false,
@@ -67,6 +67,10 @@
     "2026-10-05": [
      0,
      0
+    ],
+    "2026-10-06": [
+     0,
+     0
     ]
    },
    "clones": {
@@ -128,6 +132,10 @@
     ],
     "2026-10-05": [
      3,
+     2
+    ],
+    "2026-10-06": [
+     2,
      2
     ]
    },
@@ -199,6 +207,10 @@
     "2026-10-05": [
      0,
      0
+    ],
+    "2026-10-06": [
+     0,
+     0
     ]
    },
    "clones": {
@@ -259,6 +271,10 @@
      0
     ],
     "2026-10-05": [
+     0,
+     0
+    ],
+    "2026-10-06": [
      0,
      0
     ]
@@ -331,6 +347,10 @@
     "2026-10-05": [
      0,
      0
+    ],
+    "2026-10-06": [
+     0,
+     0
     ]
    },
    "clones": {
@@ -393,6 +413,10 @@
     "2026-10-05": [
      1,
      1
+    ],
+    "2026-10-06": [
+     0,
+     0
     ]
    },
    "referrers": [],
@@ -463,6 +487,10 @@
     "2026-10-05": [
      0,
      0
+    ],
+    "2026-10-06": [
+     0,
+     0
     ]
    },
    "clones": {
@@ -525,6 +553,10 @@
     "2026-10-05": [
      0,
      0
+    ],
+    "2026-10-06": [
+     1,
+     1
     ]
    },
    "referrers": [
@@ -608,6 +640,10 @@
     "2026-10-05": [
      0,
      0
+    ],
+    "2026-10-06": [
+     0,
+     0
     ]
    },
    "clones": {
@@ -668,6 +704,10 @@
      1
     ],
     "2026-10-05": [
+     0,
+     0
+    ],
+    "2026-10-06": [
      0,
      0
     ]
@@ -740,6 +780,10 @@
     "2026-10-05": [
      0,
      0
+    ],
+    "2026-10-06": [
+     0,
+     0
     ]
    },
    "clones": {
@@ -800,6 +844,10 @@
      0
     ],
     "2026-10-05": [
+     0,
+     0
+    ],
+    "2026-10-06": [
      0,
      0
     ]
@@ -872,6 +920,10 @@
     "2026-10-05": [
      0,
      0
+    ],
+    "2026-10-06": [
+     0,
+     0
     ]
    },
    "clones": {
@@ -932,6 +984,10 @@
      0
     ],
     "2026-10-05": [
+     0,
+     0
+    ],
+    "2026-10-06": [
      0,
      0
     ]
@@ -1004,6 +1060,10 @@
     "2026-10-05": [
      0,
      0
+    ],
+    "2026-10-06": [
+     0,
+     0
     ]
    },
    "clones": {
@@ -1066,6 +1126,10 @@
     "2026-10-05": [
      0,
      0
+    ],
+    "2026-10-06": [
+     4,
+     3
     ]
    },
    "referrers": [],
@@ -1143,6 +1207,10 @@
     "2026-10-05": [
      0,
      0
+    ],
+    "2026-10-06": [
+     0,
+     0
     ]
    },
    "clones": {
@@ -1204,6 +1272,10 @@
     ],
     "2026-10-05": [
      2,
+     1
+    ],
+    "2026-10-06": [
+     1,
      1
     ]
    },
@@ -1275,6 +1347,10 @@
     "2026-10-05": [
      0,
      0
+    ],
+    "2026-10-06": [
+     0,
+     0
     ]
    },
    "clones": {
@@ -1337,6 +1413,10 @@
     "2026-10-05": [
      65,
      33
+    ],
+    "2026-10-06": [
+     31,
+     17
     ]
    },
    "referrers": [],
@@ -1420,6 +1500,10 @@
     "2026-10-05": [
      0,
      0
+    ],
+    "2026-10-06": [
+     2,
+     1
     ]
    },
    "clones": {
@@ -1482,15 +1566,13 @@
     "2026-10-05": [
      1,
      1
+    ],
+    "2026-10-06": [
+     19,
+     9
     ]
    },
-   "referrers": [
-    {
-     "referrer": "thomasheyl.de",
-     "count": 1,
-     "uniques": 1
-    }
-   ],
+   "referrers": [],
    "paths": [
     {
      "path": "/ianrastall/ccc-archive",
@@ -1501,13 +1583,19 @@
     {
      "path": "/ianrastall/ccc-archive/tree/main/2026",
      "title": "/tree/main/2026",
-     "count": 4,
-     "uniques": 4
+     "count": 3,
+     "uniques": 3
     },
     {
      "path": "/ianrastall/ccc-archive/tree/main",
      "title": "/tree/main",
      "count": 3,
+     "uniques": 2
+    },
+    {
+     "path": "/ianrastall/ccc-archive/tree/main/2025",
+     "title": "/tree/main/2025",
+     "count": 2,
      "uniques": 2
     },
     {
@@ -1531,12 +1619,6 @@
     {
      "path": "/ianrastall/ccc-archive/tree/main/2019",
      "title": "/tree/main/2019",
-     "count": 1,
-     "uniques": 1
-    },
-    {
-     "path": "/ianrastall/ccc-archive/tree/main/2025",
-     "title": "/tree/main/2025",
      "count": 1,
      "uniques": 1
     },
@@ -1613,6 +1695,10 @@
     "2026-10-05": [
      0,
      0
+    ],
+    "2026-10-06": [
+     0,
+     0
     ]
    },
    "clones": {
@@ -1675,6 +1761,10 @@
     "2026-10-05": [
      46,
      18
+    ],
+    "2026-10-06": [
+     15,
+     7
     ]
    },
    "referrers": [
@@ -1688,8 +1778,8 @@
     {
      "path": "/ianrastall/chessnerd",
      "title": "Overview",
-     "count": 8,
-     "uniques": 8
+     "count": 6,
+     "uniques": 6
     },
     {
      "path": "/ianrastall/chessnerd/blob/main/README.md",
@@ -1698,44 +1788,14 @@
      "uniques": 3
     },
     {
-     "path": "/ianrastall/chessnerd/blob/main/scripts/eco/build_openings.py",
-     "title": "/blob/main/scripts/eco/build_openings.py",
-     "count": 2,
-     "uniques": 1
-    },
-    {
-     "path": "/ianrastall/chessnerd/blob/main/scripts/eco/sources/e.tsv",
-     "title": "/blob/main/scripts/eco/sources/e.tsv",
-     "count": 2,
-     "uniques": 1
-    },
-    {
      "path": "/ianrastall/chessnerd/blob/main/game_counts.txt",
      "title": "/blob/main/game_counts.txt",
      "count": 1,
      "uniques": 1
     },
     {
-     "path": "/ianrastall/chessnerd/blob/main/scripts/engines/build_manifest.py",
-     "title": "/blob/main/scripts/engines/build_manifest.py",
-     "count": 1,
-     "uniques": 1
-    },
-    {
-     "path": "/ianrastall/chessnerd/blob/main/scripts/engines/update_engines.py",
-     "title": "/blob/main/scripts/engines/update_engines.py",
-     "count": 1,
-     "uniques": 1
-    },
-    {
      "path": "/ianrastall/chessnerd/tree/main/data",
      "title": "/tree/main/data",
-     "count": 1,
-     "uniques": 1
-    },
-    {
-     "path": "/ianrastall/chessnerd/tree/main/data/stockfish-commits",
-     "title": "/tree/main/data/stockfish-commits",
      "count": 1,
      "uniques": 1
     },
@@ -1812,6 +1872,10 @@
     "2026-10-05": [
      0,
      0
+    ],
+    "2026-10-06": [
+     0,
+     0
     ]
    },
    "clones": {
@@ -1872,6 +1936,10 @@
      0
     ],
     "2026-10-05": [
+     0,
+     0
+    ],
+    "2026-10-06": [
      0,
      0
     ]
@@ -1957,6 +2025,10 @@
     "2026-10-05": [
      0,
      0
+    ],
+    "2026-10-06": [
+     0,
+     0
     ]
    },
    "clones": {
@@ -2019,23 +2091,14 @@
     "2026-10-05": [
      1,
      1
+    ],
+    "2026-10-06": [
+     3,
+     3
     ]
    },
-   "referrers": [
-    {
-     "referrer": "github.com",
-     "count": 1,
-     "uniques": 1
-    }
-   ],
-   "paths": [
-    {
-     "path": "/ianrastall/ctml",
-     "title": "Overview",
-     "count": 1,
-     "uniques": 1
-    }
-   ]
+   "referrers": [],
+   "paths": []
   },
   "ctml-clean": {
    "private": false,
@@ -2102,6 +2165,10 @@
     "2026-10-05": [
      0,
      0
+    ],
+    "2026-10-06": [
+     0,
+     0
     ]
    },
    "clones": {
@@ -2164,6 +2231,10 @@
     "2026-10-05": [
      1,
      1
+    ],
+    "2026-10-06": [
+     0,
+     0
     ]
    },
    "referrers": [],
@@ -2234,6 +2305,10 @@
     "2026-10-05": [
      0,
      0
+    ],
+    "2026-10-06": [
+     0,
+     0
     ]
    },
    "clones": {
@@ -2296,6 +2371,10 @@
     "2026-10-05": [
      24,
      18
+    ],
+    "2026-10-06": [
+     17,
+     11
     ]
    },
    "referrers": [],
@@ -2366,6 +2445,10 @@
     "2026-10-05": [
      0,
      0
+    ],
+    "2026-10-06": [
+     0,
+     0
     ]
    },
    "clones": {
@@ -2426,6 +2509,10 @@
      0
     ],
     "2026-10-05": [
+     0,
+     0
+    ],
+    "2026-10-06": [
      0,
      0
     ]
@@ -2498,6 +2585,10 @@
     "2026-10-05": [
      0,
      0
+    ],
+    "2026-10-06": [
+     0,
+     0
     ]
    },
    "clones": {
@@ -2560,6 +2651,10 @@
     "2026-10-05": [
      2,
      1
+    ],
+    "2026-10-06": [
+     4,
+     3
     ]
    },
    "referrers": [],
@@ -2690,8 +2785,8 @@
      4
     ],
     "2026-10-06": [
-     0,
-     0
+     58,
+     32
     ]
    },
    "referrers": [],
@@ -2762,6 +2857,10 @@
     "2026-10-05": [
      2,
      1
+    ],
+    "2026-10-06": [
+     0,
+     0
     ]
    },
    "clones": {
@@ -2824,6 +2923,10 @@
     "2026-10-05": [
      0,
      0
+    ],
+    "2026-10-06": [
+     1,
+     1
     ]
    },
    "referrers": [
@@ -2913,6 +3016,10 @@
     "2026-10-05": [
      0,
      0
+    ],
+    "2026-10-06": [
+     0,
+     0
     ]
    },
    "clones": {
@@ -2975,6 +3082,10 @@
     "2026-10-05": [
      3,
      3
+    ],
+    "2026-10-06": [
+     0,
+     0
     ]
    },
    "referrers": [],
@@ -3045,6 +3156,10 @@
     "2026-10-05": [
      0,
      0
+    ],
+    "2026-10-06": [
+     0,
+     0
     ]
    },
    "clones": {
@@ -3107,6 +3222,10 @@
     "2026-10-05": [
      0,
      0
+    ],
+    "2026-10-06": [
+     1,
+     1
     ]
    },
    "referrers": [
@@ -3190,6 +3309,10 @@
     "2026-10-05": [
      0,
      0
+    ],
+    "2026-10-06": [
+     0,
+     0
     ]
    },
    "clones": {
@@ -3252,6 +3375,10 @@
     "2026-10-05": [
      23,
      9
+    ],
+    "2026-10-06": [
+     1,
+     1
     ]
    },
    "referrers": [
@@ -3346,6 +3473,10 @@
     "2026-10-05": [
      1,
      1
+    ],
+    "2026-10-06": [
+     20,
+     19
     ]
    },
    "clones": {
@@ -3408,25 +3539,77 @@
     "2026-10-05": [
      19,
      11
+    ],
+    "2026-10-06": [
+     28,
+     18
     ]
    },
    "referrers": [
     {
      "referrer": "reddit.com",
-     "count": 2,
-     "uniques": 2
+     "count": 3,
+     "uniques": 3
     }
    ],
    "paths": [
     {
      "path": "/ianrastall/lore",
      "title": "Overview",
-     "count": 3,
-     "uniques": 2
+     "count": 4,
+     "uniques": 3
     },
     {
-     "path": "/ianrastall/lore/releases/tag/1.8.0",
-     "title": "/releases/tag/1.8.0",
+     "path": "/ianrastall/lore/blob/main/.gitignore",
+     "title": "/blob/main/.gitignore",
+     "count": 1,
+     "uniques": 1
+    },
+    {
+     "path": "/ianrastall/lore/blob/main/Build-SwephDll.ps1",
+     "title": "/blob/main/Build-SwephDll.ps1",
+     "count": 1,
+     "uniques": 1
+    },
+    {
+     "path": "/ianrastall/lore/blob/main/LICENSE",
+     "title": "/blob/main/LICENSE",
+     "count": 1,
+     "uniques": 1
+    },
+    {
+     "path": "/ianrastall/lore/blob/main/Lore.csproj",
+     "title": "/blob/main/Lore.csproj",
+     "count": 1,
+     "uniques": 1
+    },
+    {
+     "path": "/ianrastall/lore/blob/main/README.md",
+     "title": "/blob/main/README.md",
+     "count": 1,
+     "uniques": 1
+    },
+    {
+     "path": "/ianrastall/lore/blob/main/Services/CelebrityService.cs",
+     "title": "/blob/main/Services/CelebrityService.cs",
+     "count": 1,
+     "uniques": 1
+    },
+    {
+     "path": "/ianrastall/lore/blob/main/Services/ChartService.cs",
+     "title": "/blob/main/Services/ChartService.cs",
+     "count": 1,
+     "uniques": 1
+    },
+    {
+     "path": "/ianrastall/lore/blob/main/Services/SwissEphemeris.cs",
+     "title": "/blob/main/Services/SwissEphemeris.cs",
+     "count": 1,
+     "uniques": 1
+    },
+    {
+     "path": "/ianrastall/lore/blob/main/ViewModels/MainViewModel.cs",
+     "title": "/blob/main/ViewModels/MainViewModel.cs",
      "count": 1,
      "uniques": 1
     }
@@ -3497,6 +3680,10 @@
     "2026-10-05": [
      0,
      0
+    ],
+    "2026-10-06": [
+     0,
+     0
     ]
    },
    "clones": {
@@ -3559,6 +3746,10 @@
     "2026-10-05": [
      0,
      0
+    ],
+    "2026-10-06": [
+     1,
+     1
     ]
    },
    "referrers": [
@@ -3642,6 +3833,10 @@
     "2026-10-05": [
      0,
      0
+    ],
+    "2026-10-06": [
+     0,
+     0
     ]
    },
    "clones": {
@@ -3702,6 +3897,10 @@
      0
     ],
     "2026-10-05": [
+     0,
+     0
+    ],
+    "2026-10-06": [
      0,
      0
     ]
@@ -3774,6 +3973,10 @@
     "2026-10-05": [
      0,
      0
+    ],
+    "2026-10-06": [
+     0,
+     0
     ]
    },
    "clones": {
@@ -3836,6 +4039,10 @@
     "2026-10-05": [
      1,
      1
+    ],
+    "2026-10-06": [
+     0,
+     0
     ]
    },
    "referrers": [],
@@ -3913,6 +4120,10 @@
     "2026-10-05": [
      0,
      0
+    ],
+    "2026-10-06": [
+     0,
+     0
     ]
    },
    "clones": {
@@ -3973,6 +4184,10 @@
      0
     ],
     "2026-10-05": [
+     0,
+     0
+    ],
+    "2026-10-06": [
      0,
      0
     ]
@@ -4052,6 +4267,10 @@
     "2026-10-05": [
      0,
      0
+    ],
+    "2026-10-06": [
+     0,
+     0
     ]
    },
    "clones": {
@@ -4114,6 +4333,10 @@
     "2026-10-05": [
      1,
      1
+    ],
+    "2026-10-06": [
+     0,
+     0
     ]
    },
    "referrers": [
@@ -4197,6 +4420,10 @@
     "2026-10-05": [
      0,
      0
+    ],
+    "2026-10-06": [
+     0,
+     0
     ]
    },
    "clones": {
@@ -4257,6 +4484,10 @@
      0
     ],
     "2026-10-05": [
+     0,
+     0
+    ],
+    "2026-10-06": [
      0,
      0
     ]
@@ -4329,6 +4560,10 @@
     "2026-10-05": [
      1,
      1
+    ],
+    "2026-10-06": [
+     0,
+     0
     ]
    },
    "clones": {
@@ -4389,6 +4624,10 @@
      1
     ],
     "2026-10-05": [
+     0,
+     0
+    ],
+    "2026-10-06": [
      0,
      0
     ]
@@ -4503,6 +4742,10 @@
     "2026-10-05": [
      0,
      0
+    ],
+    "2026-10-06": [
+     0,
+     0
     ]
    },
    "clones": {
@@ -4565,6 +4808,10 @@
     "2026-10-05": [
      1,
      1
+    ],
+    "2026-10-06": [
+     1,
+     1
     ]
    },
    "referrers": [],
@@ -4572,20 +4819,8 @@
     {
      "path": "/ianrastall/PgnTours",
      "title": "Overview",
-     "count": 4,
-     "uniques": 3
-    },
-    {
-     "path": "/ianrastall/PgnTours/branches",
-     "title": "/branches",
-     "count": 1,
-     "uniques": 1
-    },
-    {
-     "path": "/ianrastall/PgnTours/commit/3ba2a432634afd4d7a0cc00ab1663eb47435855c",
-     "title": "/commit/3ba2a432634afd4d7a0cc00ab1663eb47435855c",
-     "count": 1,
-     "uniques": 1
+     "count": 2,
+     "uniques": 2
     }
    ]
   },
@@ -4654,6 +4889,10 @@
     "2026-10-05": [
      0,
      0
+    ],
+    "2026-10-06": [
+     0,
+     0
     ]
    },
    "clones": {
@@ -4716,6 +4955,10 @@
     "2026-10-05": [
      4,
      2
+    ],
+    "2026-10-06": [
+     2,
+     1
     ]
    },
    "referrers": [],
@@ -4799,6 +5042,10 @@
     "2026-10-05": [
      0,
      0
+    ],
+    "2026-10-06": [
+     0,
+     0
     ]
    },
    "clones": {
@@ -4861,6 +5108,10 @@
     "2026-10-05": [
      1,
      1
+    ],
+    "2026-10-06": [
+     0,
+     0
     ]
    },
    "referrers": [],
@@ -4931,6 +5182,10 @@
     "2026-10-05": [
      0,
      0
+    ],
+    "2026-10-06": [
+     0,
+     0
     ]
    },
    "clones": {
@@ -4993,6 +5248,10 @@
     "2026-10-05": [
      0,
      0
+    ],
+    "2026-10-06": [
+     1,
+     1
     ]
    },
    "referrers": [],
@@ -5063,6 +5322,10 @@
     "2026-10-05": [
      0,
      0
+    ],
+    "2026-10-06": [
+     1,
+     1
     ]
    },
    "clones": {
@@ -5125,10 +5388,20 @@
     "2026-10-05": [
      0,
      0
+    ],
+    "2026-10-06": [
+     0,
+     0
     ]
    },
    "referrers": [],
    "paths": [
+    {
+     "path": "/ianrastall/text-utils/blob/main/FILE-STRUCTURE.md",
+     "title": "/blob/main/FILE-STRUCTURE.md",
+     "count": 1,
+     "uniques": 1
+    },
     {
      "path": "/ianrastall/text-utils/blob/main/JSON-TOOL-MIGRATION.md",
      "title": "/blob/main/JSON-TOOL-MIGRATION.md",
@@ -5208,6 +5481,10 @@
     "2026-10-05": [
      0,
      0
+    ],
+    "2026-10-06": [
+     0,
+     0
     ]
    },
    "clones": {
@@ -5270,6 +5547,10 @@
     "2026-10-05": [
      7,
      4
+    ],
+    "2026-10-06": [
+     2,
+     2
     ]
    },
    "referrers": [],
@@ -5340,6 +5621,10 @@
     "2026-10-05": [
      0,
      0
+    ],
+    "2026-10-06": [
+     0,
+     0
     ]
    },
    "clones": {
@@ -5402,6 +5687,10 @@
     "2026-10-05": [
      0,
      0
+    ],
+    "2026-10-06": [
+     1,
+     1
     ]
    },
    "referrers": [],
@@ -5472,6 +5761,10 @@
     "2026-10-05": [
      0,
      0
+    ],
+    "2026-10-06": [
+     0,
+     0
     ]
    },
    "clones": {
@@ -5534,6 +5827,10 @@
     "2026-10-05": [
      1,
      1
+    ],
+    "2026-10-06": [
+     0,
+     0
     ]
    },
    "referrers": [],
