@@ -1,6 +1,6 @@
 {
  "owner": "ianrastall",
- "updated": "2026-11-22T13:23:03.005Z",
+ "updated": "2026-11-23T15:59:53.108Z",
  "repos": {
   "3-0-thursday-archive": {
    "private": false,
@@ -255,6 +255,10 @@
     "2026-11-21": [
      0,
      0
+    ],
+    "2026-11-22": [
+     0,
+     0
     ]
    },
    "clones": {
@@ -504,6 +508,10 @@
     ],
     "2026-11-21": [
      3,
+     1
+    ],
+    "2026-11-22": [
+     1,
      1
     ]
    },
@@ -770,6 +778,10 @@
     "2026-11-21": [
      0,
      0
+    ],
+    "2026-11-22": [
+     1,
+     1
     ]
    },
    "clones": {
@@ -1020,6 +1032,10 @@
     "2026-11-21": [
      0,
      0
+    ],
+    "2026-11-22": [
+     1,
+     1
     ]
    },
    "referrers": [
@@ -1033,8 +1049,8 @@
     {
      "path": "/ianrastall/advanced-search",
      "title": "Overview",
-     "count": 4,
-     "uniques": 3
+     "count": 5,
+     "uniques": 4
     },
     {
      "path": "/ianrastall/advanced-search/blob/main/index.html",
@@ -1297,6 +1313,10 @@
     "2026-11-21": [
      0,
      0
+    ],
+    "2026-11-22": [
+     0,
+     0
     ]
    },
    "clones": {
@@ -1545,6 +1565,10 @@
      0
     ],
     "2026-11-21": [
+     0,
+     0
+    ],
+    "2026-11-22": [
      0,
      0
     ]
@@ -1805,6 +1829,10 @@
     "2026-11-21": [
      2,
      2
+    ],
+    "2026-11-22": [
+     4,
+     2
     ]
    },
    "clones": {
@@ -2055,13 +2083,17 @@
     "2026-11-21": [
      3,
      1
+    ],
+    "2026-11-22": [
+     2,
+     2
     ]
    },
    "referrers": [
     {
      "referrer": "Bing",
-     "count": 4,
-     "uniques": 3
+     "count": 6,
+     "uniques": 5
     },
     {
      "referrer": "DuckDuckGo",
@@ -2078,8 +2110,8 @@
     {
      "path": "/ianrastall/audio-stretch",
      "title": "Overview",
-     "count": 9,
-     "uniques": 7
+     "count": 12,
+     "uniques": 9
     },
     {
      "path": "/ianrastall/audio-stretch/releases/tag/v0.3.0",
@@ -2090,6 +2122,12 @@
     {
      "path": "/ianrastall/audio-stretch/blob/master/README.md",
      "title": "/blob/master/README.md",
+     "count": 1,
+     "uniques": 1
+    },
+    {
+     "path": "/ianrastall/audio-stretch/commit/740e74cf9e10c0f7b66838e3c7048d253d232b76",
+     "title": "/commit/740e74cf9e10c0f7b66838e3c7048d253d232b76",
      "count": 1,
      "uniques": 1
     },
@@ -2354,6 +2392,10 @@
     "2026-11-21": [
      0,
      0
+    ],
+    "2026-11-22": [
+     0,
+     0
     ]
    },
    "clones": {
@@ -2602,6 +2644,10 @@
      0
     ],
     "2026-11-21": [
+     0,
+     0
+    ],
+    "2026-11-22": [
      0,
      0
     ]
@@ -2862,6 +2908,10 @@
     "2026-11-21": [
      0,
      0
+    ],
+    "2026-11-22": [
+     0,
+     0
     ]
    },
    "clones": {
@@ -3112,6 +3162,10 @@
     "2026-11-21": [
      50,
      18
+    ],
+    "2026-11-22": [
+     45,
+     23
     ]
    },
    "referrers": [
@@ -3389,6 +3443,10 @@
     "2026-11-21": [
      0,
      0
+    ],
+    "2026-11-22": [
+     0,
+     0
     ]
    },
    "clones": {
@@ -3637,6 +3695,10 @@
      0
     ],
     "2026-11-21": [
+     0,
+     0
+    ],
+    "2026-11-22": [
      0,
      0
     ]
@@ -3897,6 +3959,10 @@
     "2026-11-21": [
      0,
      0
+    ],
+    "2026-11-22": [
+     0,
+     0
     ]
    },
    "clones": {
@@ -4147,17 +4213,14 @@
     "2026-11-21": [
      2,
      2
+    ],
+    "2026-11-22": [
+     13,
+     7
     ]
    },
    "referrers": [],
-   "paths": [
-    {
-     "path": "/ianrastall/bookstacks/issues",
-     "title": "/issues",
-     "count": 1,
-     "uniques": 1
-    }
-   ]
+   "paths": []
   },
   "bookstacks-pdf": {
    "private": false,
@@ -4324,6 +4387,10 @@
     "2026-11-21": [
      0,
      0
+    ],
+    "2026-11-22": [
+     0,
+     0
     ]
    },
    "clones": {
@@ -4486,6 +4553,10 @@
     "2026-11-21": [
      0,
      0
+    ],
+    "2026-11-22": [
+     1,
+     1
     ]
    },
    "referrers": [],
@@ -4744,6 +4815,10 @@
     "2026-11-21": [
      0,
      0
+    ],
+    "2026-11-22": [
+     0,
+     0
     ]
    },
    "clones": {
@@ -4992,6 +5067,10 @@
      0
     ],
     "2026-11-21": [
+     0,
+     0
+    ],
+    "2026-11-22": [
      0,
      0
     ]
@@ -5265,6 +5344,10 @@
     "2026-11-21": [
      0,
      0
+    ],
+    "2026-11-22": [
+     0,
+     0
     ]
    },
    "clones": {
@@ -5515,23 +5598,14 @@
     "2026-11-21": [
      0,
      0
+    ],
+    "2026-11-22": [
+     0,
+     0
     ]
    },
    "referrers": [],
-   "paths": [
-    {
-     "path": "/ianrastall/cc-events-archive",
-     "title": "Overview",
-     "count": 1,
-     "uniques": 1
-    },
-    {
-     "path": "/ianrastall/cc-events-archive/tree/main/2026",
-     "title": "/tree/main/2026",
-     "count": 1,
-     "uniques": 1
-    }
-   ]
+   "paths": []
   },
   "ccc-archive": {
    "private": false,
@@ -5786,6 +5860,10 @@
     "2026-11-21": [
      22,
      2
+    ],
+    "2026-11-22": [
+     0,
+     0
     ]
    },
    "clones": {
@@ -6036,6 +6114,10 @@
     "2026-11-21": [
      3,
      2
+    ],
+    "2026-11-22": [
+     0,
+     0
     ]
    },
    "referrers": [
@@ -6054,14 +6136,14 @@
     {
      "path": "/ianrastall/ccc-archive",
      "title": "Overview",
-     "count": 21,
-     "uniques": 12
+     "count": 19,
+     "uniques": 10
     },
     {
      "path": "/ianrastall/ccc-archive/tree/main/2026",
      "title": "/tree/main/2026",
-     "count": 5,
-     "uniques": 3
+     "count": 4,
+     "uniques": 2
     },
     {
      "path": "/ianrastall/ccc-archive/tree/main/2018",
@@ -6286,6 +6368,10 @@
     "2026-11-21": [
      0,
      0
+    ],
+    "2026-11-22": [
+     0,
+     0
     ]
    },
    "clones": {
@@ -6456,6 +6542,10 @@
     "2026-11-21": [
      0,
      0
+    ],
+    "2026-11-22": [
+     1,
+     1
     ]
    },
    "referrers": [
@@ -6655,6 +6745,10 @@
     "2026-11-21": [
      0,
      0
+    ],
+    "2026-11-22": [
+     0,
+     0
     ]
    },
    "clones": {
@@ -6833,6 +6927,10 @@
     "2026-11-21": [
      0,
      0
+    ],
+    "2026-11-22": [
+     1,
+     1
     ]
    },
    "referrers": [],
@@ -7091,6 +7189,10 @@
     "2026-11-21": [
      2,
      2
+    ],
+    "2026-11-22": [
+     5,
+     1
     ]
    },
    "clones": {
@@ -7341,21 +7443,25 @@
     "2026-11-21": [
      57,
      26
+    ],
+    "2026-11-22": [
+     33,
+     13
     ]
    },
    "referrers": [
     {
      "referrer": "chessnerd.net",
-     "count": 2,
-     "uniques": 2
+     "count": 3,
+     "uniques": 3
     }
    ],
    "paths": [
     {
      "path": "/ianrastall/chessnerd",
      "title": "Overview",
-     "count": 6,
-     "uniques": 5
+     "count": 7,
+     "uniques": 6
     },
     {
      "path": "/ianrastall/chessnerd/blob/main/ccc_links.txt",
@@ -7390,6 +7496,24 @@
     {
      "path": "/ianrastall/chessnerd/tree/main/js",
      "title": "/tree/main/js",
+     "count": 1,
+     "uniques": 1
+    },
+    {
+     "path": "/ianrastall/chessnerd/tree/main/src",
+     "title": "/tree/main/src",
+     "count": 1,
+     "uniques": 1
+    },
+    {
+     "path": "/ianrastall/chessnerd/tree/main/src/components",
+     "title": "/tree/main/src/components",
+     "count": 1,
+     "uniques": 1
+    },
+    {
+     "path": "/ianrastall/chessnerd/tree/main/src/scripts",
+     "title": "/tree/main/src/scripts",
      "count": 1,
      "uniques": 1
     }
@@ -7648,6 +7772,10 @@
     "2026-11-21": [
      0,
      0
+    ],
+    "2026-11-22": [
+     0,
+     0
     ]
    },
    "clones": {
@@ -7896,6 +8024,10 @@
      0
     ],
     "2026-11-21": [
+     0,
+     0
+    ],
+    "2026-11-22": [
      0,
      0
     ]
@@ -8156,6 +8288,10 @@
     "2026-11-21": [
      0,
      0
+    ],
+    "2026-11-22": [
+     0,
+     0
     ]
    },
    "clones": {
@@ -8406,6 +8542,10 @@
     "2026-11-21": [
      4,
      4
+    ],
+    "2026-11-22": [
+     2,
+     2
     ]
    },
    "referrers": [
@@ -8677,6 +8817,10 @@
     "2026-11-21": [
      0,
      0
+    ],
+    "2026-11-22": [
+     0,
+     0
     ]
    },
    "clones": {
@@ -8927,6 +9071,10 @@
     "2026-11-21": [
      0,
      0
+    ],
+    "2026-11-22": [
+     1,
+     1
     ]
    },
    "referrers": [],
@@ -9185,6 +9333,10 @@
     "2026-11-21": [
      0,
      0
+    ],
+    "2026-11-22": [
+     0,
+     0
     ]
    },
    "clones": {
@@ -9435,6 +9587,10 @@
     "2026-11-21": [
      9,
      8
+    ],
+    "2026-11-22": [
+     14,
+     10
     ]
    },
    "referrers": [
@@ -9706,6 +9862,10 @@
     "2026-11-21": [
      0,
      0
+    ],
+    "2026-11-22": [
+     0,
+     0
     ]
    },
    "clones": {
@@ -9954,6 +10114,10 @@
      0
     ],
     "2026-11-21": [
+     0,
+     0
+    ],
+    "2026-11-22": [
      0,
      0
     ]
@@ -10214,6 +10378,10 @@
     "2026-11-21": [
      0,
      0
+    ],
+    "2026-11-22": [
+     0,
+     0
     ]
    },
    "clones": {
@@ -10464,6 +10632,10 @@
     "2026-11-21": [
      4,
      4
+    ],
+    "2026-11-22": [
+     2,
+     2
     ]
    },
    "referrers": [],
@@ -10654,6 +10826,10 @@
     "2026-11-21": [
      0,
      0
+    ],
+    "2026-11-22": [
+     0,
+     0
     ]
    },
    "clones": {
@@ -10834,6 +11010,10 @@
      1
     ],
     "2026-11-21": [
+     1,
+     1
+    ],
+    "2026-11-22": [
      1,
      1
     ]
@@ -11063,6 +11243,10 @@
     "2026-11-21": [
      0,
      0
+    ],
+    "2026-11-22": [
+     0,
+     0
     ]
    },
    "clones": {
@@ -11243,6 +11427,10 @@
      0
     ],
     "2026-11-21": [
+     0,
+     0
+    ],
+    "2026-11-22": [
      0,
      0
     ]
@@ -11506,6 +11694,10 @@
     "2026-11-21": [
      0,
      0
+    ],
+    "2026-11-22": [
+     0,
+     0
     ]
    },
    "clones": {
@@ -11752,6 +11944,10 @@
     "2026-11-21": [
      10,
      8
+    ],
+    "2026-11-22": [
+     6,
+     3
     ]
    },
    "referrers": [],
@@ -11902,6 +12098,10 @@
     "2026-11-21": [
      0,
      0
+    ],
+    "2026-11-22": [
+     0,
+     0
     ]
    },
    "clones": {
@@ -12042,6 +12242,10 @@
      1
     ],
     "2026-11-21": [
+     0,
+     0
+    ],
+    "2026-11-22": [
      0,
      0
     ]
@@ -12302,6 +12506,10 @@
     "2026-11-21": [
      0,
      0
+    ],
+    "2026-11-22": [
+     0,
+     0
     ]
    },
    "clones": {
@@ -12550,6 +12758,10 @@
      0
     ],
     "2026-11-21": [
+     0,
+     0
+    ],
+    "2026-11-22": [
      0,
      0
     ]
@@ -12810,6 +13022,10 @@
     "2026-11-21": [
      0,
      0
+    ],
+    "2026-11-22": [
+     0,
+     0
     ]
    },
    "clones": {
@@ -13060,6 +13276,10 @@
     "2026-11-21": [
      1,
      1
+    ],
+    "2026-11-22": [
+     1,
+     1
     ]
    },
    "referrers": [],
@@ -13174,6 +13394,10 @@
     "2026-11-21": [
      0,
      0
+    ],
+    "2026-11-22": [
+     0,
+     0
     ]
    },
    "clones": {
@@ -13278,6 +13502,10 @@
      0
     ],
     "2026-11-21": [
+     0,
+     0
+    ],
+    "2026-11-22": [
      0,
      0
     ]
@@ -13538,6 +13766,10 @@
     "2026-11-21": [
      0,
      0
+    ],
+    "2026-11-22": [
+     0,
+     0
     ]
    },
    "clones": {
@@ -13788,6 +14020,10 @@
     "2026-11-21": [
      0,
      0
+    ],
+    "2026-11-22": [
+     0,
+     0
     ]
    },
    "referrers": [
@@ -13973,6 +14209,10 @@
     "2026-11-21": [
      0,
      0
+    ],
+    "2026-11-22": [
+     0,
+     0
     ]
    },
    "clones": {
@@ -14119,6 +14359,10 @@
     "2026-11-21": [
      0,
      0
+    ],
+    "2026-11-22": [
+     0,
+     0
     ]
    },
    "referrers": [
@@ -14149,12 +14393,6 @@
     {
      "path": "/ianrastall/lichess-local/tree/main/app/Assets",
      "title": "/tree/main/app/Assets",
-     "count": 1,
-     "uniques": 1
-    },
-    {
-     "path": "/ianrastall/lichess-local/tree/v0.1.0",
-     "title": "/tree/v0.1.0",
      "count": 1,
      "uniques": 1
     }
@@ -14413,6 +14651,10 @@
     "2026-11-21": [
      1,
      1
+    ],
+    "2026-11-22": [
+     0,
+     0
     ]
    },
    "clones": {
@@ -14663,6 +14905,10 @@
     "2026-11-21": [
      0,
      0
+    ],
+    "2026-11-22": [
+     1,
+     1
     ]
    },
    "referrers": [
@@ -14689,18 +14935,6 @@
      "title": "/releases",
      "count": 3,
      "uniques": 3
-    },
-    {
-     "path": "/ianrastall/lichess-puzzles/blob/main/docs/jupiter-exceptions.md",
-     "title": "/blob/main/docs/jupiter-exceptions.md",
-     "count": 1,
-     "uniques": 1
-    },
-    {
-     "path": "/ianrastall/lichess-puzzles/blob/main/docs/project-brief.md",
-     "title": "/blob/main/docs/project-brief.md",
-     "count": 1,
-     "uniques": 1
     },
     {
      "path": "/ianrastall/lichess-puzzles/blob/main/docs/puzzle-selection.md",
@@ -14975,6 +15209,10 @@
     "2026-11-21": [
      2,
      1
+    ],
+    "2026-11-22": [
+     5,
+     2
     ]
    },
    "clones": {
@@ -15225,6 +15463,10 @@
     "2026-11-21": [
      27,
      6
+    ],
+    "2026-11-22": [
+     43,
+     6
     ]
    },
    "referrers": [
@@ -15248,8 +15490,8 @@
     {
      "path": "/ianrastall/lore",
      "title": "Overview",
-     "count": 23,
-     "uniques": 15
+     "count": 26,
+     "uniques": 17
     },
     {
      "path": "/ianrastall/lore/blob/main/content/celebrities.json",
@@ -15262,6 +15504,12 @@
      "title": "/tree/main/content",
      "count": 4,
      "uniques": 3
+    },
+    {
+     "path": "/ianrastall/lore/releases",
+     "title": "/releases",
+     "count": 3,
+     "uniques": 2
     },
     {
      "path": "/ianrastall/lore/blob/main/content/interpretations.json",
@@ -15296,12 +15544,6 @@
     {
      "path": "/ianrastall/lore/blob/main/README.md",
      "title": "/blob/main/README.md",
-     "count": 1,
-     "uniques": 1
-    },
-    {
-     "path": "/ianrastall/lore/releases",
-     "title": "/releases",
      "count": 1,
      "uniques": 1
     }
@@ -15496,6 +15738,10 @@
     "2026-11-21": [
      0,
      0
+    ],
+    "2026-11-22": [
+     0,
+     0
     ]
    },
    "clones": {
@@ -15682,6 +15928,10 @@
     "2026-11-21": [
      0,
      0
+    ],
+    "2026-11-22": [
+     1,
+     1
     ]
    },
    "referrers": [],
@@ -15940,6 +16190,10 @@
     "2026-11-21": [
      0,
      0
+    ],
+    "2026-11-22": [
+     0,
+     0
     ]
    },
    "clones": {
@@ -16188,6 +16442,10 @@
      0
     ],
     "2026-11-21": [
+     1,
+     1
+    ],
+    "2026-11-22": [
      1,
      1
     ]
@@ -16455,6 +16713,10 @@
     "2026-11-21": [
      0,
      0
+    ],
+    "2026-11-22": [
+     0,
+     0
     ]
    },
    "clones": {
@@ -16705,6 +16967,10 @@
     "2026-11-21": [
      0,
      0
+    ],
+    "2026-11-22": [
+     1,
+     1
     ]
    },
    "referrers": [],
@@ -16911,6 +17177,10 @@
     "2026-11-21": [
      0,
      0
+    ],
+    "2026-11-22": [
+     0,
+     0
     ]
    },
    "clones": {
@@ -17109,6 +17379,10 @@
     "2026-11-21": [
      7,
      6
+    ],
+    "2026-11-22": [
+     10,
+     7
     ]
    },
    "referrers": [],
@@ -17328,6 +17602,10 @@
     "2026-11-21": [
      0,
      0
+    ],
+    "2026-11-22": [
+     0,
+     0
     ]
    },
    "clones": {
@@ -17512,6 +17790,10 @@
      0
     ],
     "2026-11-21": [
+     0,
+     0
+    ],
+    "2026-11-22": [
      0,
      0
     ]
@@ -17708,6 +17990,10 @@
     "2026-11-21": [
      0,
      0
+    ],
+    "2026-11-22": [
+     0,
+     0
     ]
    },
    "clones": {
@@ -17892,6 +18178,10 @@
      0
     ],
     "2026-11-21": [
+     0,
+     0
+    ],
+    "2026-11-22": [
      0,
      0
     ]
@@ -18152,6 +18442,10 @@
     "2026-11-21": [
      66,
      2
+    ],
+    "2026-11-22": [
+     18,
+     1
     ]
    },
    "clones": {
@@ -18402,6 +18696,10 @@
     "2026-11-21": [
      0,
      0
+    ],
+    "2026-11-22": [
+     0,
+     0
     ]
    },
    "referrers": [],
@@ -18415,7 +18713,13 @@
     {
      "path": "/ianrastall/misc-chess-projects/tree/main/lczero-test-games/t80",
      "title": "/tree/main/lczero-test-games/t80",
-     "count": 6,
+     "count": 8,
+     "uniques": 1
+    },
+    {
+     "path": "/ianrastall/misc-chess-projects/tree/main",
+     "title": "/tree/main",
+     "count": 5,
      "uniques": 1
     },
     {
@@ -18425,45 +18729,39 @@
      "uniques": 1
     },
     {
+     "path": "/ianrastall/misc-chess-projects",
+     "title": "Overview",
+     "count": 3,
+     "uniques": 2
+    },
+    {
+     "path": "/ianrastall/misc-chess-projects/tree/main/lczero-test-games",
+     "title": "/tree/main/lczero-test-games",
+     "count": 3,
+     "uniques": 1
+    },
+    {
+     "path": "/ianrastall/misc-chess-projects/tree/main/lczero-test-games/t80/2022-04",
+     "title": "/tree/main/lczero-test-games/t80/2022-04",
+     "count": 3,
+     "uniques": 1
+    },
+    {
+     "path": "/ianrastall/misc-chess-projects/blob/main/lczero-test-games/t80/2022-04/lc0-t80-artemis-220404.pgn",
+     "title": "/blob/main/lczero-test-games/t80/2022-04/lc0-t80-artemis-220404.pgn",
+     "count": 2,
+     "uniques": 1
+    },
+    {
      "path": "/ianrastall/misc-chess-projects/blob/main/lczero-test-games/t80/2024-05/lc0-t80-artemis-240501.pgn",
      "title": "/blob/main/lczero-test-games/t80/2024-05/lc0-t80-artemis-240501.pgn",
      "count": 2,
      "uniques": 1
     },
     {
-     "path": "/ianrastall/misc-chess-projects/tree/main/lczero-test-games",
-     "title": "/tree/main/lczero-test-games",
+     "path": "/ianrastall/misc-chess-projects/tree/main/processed-ccc",
+     "title": "/tree/main/processed-ccc",
      "count": 2,
-     "uniques": 1
-    },
-    {
-     "path": "/ianrastall/misc-chess-projects/tree/main/lczero-test-games/t80/2022-04",
-     "title": "/tree/main/lczero-test-games/t80/2022-04",
-     "count": 2,
-     "uniques": 1
-    },
-    {
-     "path": "/ianrastall/misc-chess-projects",
-     "title": "Overview",
-     "count": 1,
-     "uniques": 1
-    },
-    {
-     "path": "/ianrastall/misc-chess-projects/blob/main/README.md",
-     "title": "/blob/main/README.md",
-     "count": 1,
-     "uniques": 1
-    },
-    {
-     "path": "/ianrastall/misc-chess-projects/blob/main/lczero-test-games/t80/2022-04/lc0-t80-artemis-220404.pgn",
-     "title": "/blob/main/lczero-test-games/t80/2022-04/lc0-t80-artemis-220404.pgn",
-     "count": 1,
-     "uniques": 1
-    },
-    {
-     "path": "/ianrastall/misc-chess-projects/blob/main/lczero-test-games/t80/2022-04/lc0-t80-artemis-220405.pgn",
-     "title": "/blob/main/lczero-test-games/t80/2022-04/lc0-t80-artemis-220405.pgn",
-     "count": 1,
      "uniques": 1
     }
    ]
@@ -18721,6 +19019,10 @@
     "2026-11-21": [
      0,
      0
+    ],
+    "2026-11-22": [
+     0,
+     0
     ]
    },
    "clones": {
@@ -18971,6 +19273,10 @@
     "2026-11-21": [
      0,
      0
+    ],
+    "2026-11-22": [
+     0,
+     0
     ]
    },
    "referrers": [],
@@ -19076,6 +19382,10 @@
     "2026-11-21": [
      0,
      0
+    ],
+    "2026-11-22": [
+     2,
+     1
     ]
    },
    "clones": {
@@ -19166,6 +19476,10 @@
     "2026-11-21": [
      53,
      27
+    ],
+    "2026-11-22": [
+     55,
+     16
     ]
    },
    "referrers": [
@@ -19179,8 +19493,14 @@
     {
      "path": "/ianrastall/offline-maps",
      "title": "Overview",
-     "count": 2,
-     "uniques": 2
+     "count": 3,
+     "uniques": 3
+    },
+    {
+     "path": "/ianrastall/offline-maps/blob/86b829aec74a63d6d0fb3442a44afd063f5d1acb/assets/notices/THIRD-PARTY-NOTICES.txt",
+     "title": "/blob/86b829aec74a63d6d0fb3442a44afd063f5d1acb/assets/notices/THIRD-PARTY-NOTICES.txt",
+     "count": 1,
+     "uniques": 1
     }
    ]
   },
@@ -19529,6 +19849,10 @@
     "2026-11-21": [
      0,
      0
+    ],
+    "2026-11-22": [
+     0,
+     0
     ]
    },
    "clones": {
@@ -19605,6 +19929,10 @@
      7
     ],
     "2026-11-21": [
+     3,
+     3
+    ],
+    "2026-11-22": [
      3,
      3
     ]
@@ -19865,6 +20193,10 @@
     "2026-11-21": [
      0,
      0
+    ],
+    "2026-11-22": [
+     0,
+     0
     ]
    },
    "clones": {
@@ -20113,6 +20445,10 @@
      1
     ],
     "2026-11-21": [
+     0,
+     0
+    ],
+    "2026-11-22": [
      0,
      0
     ]
@@ -20373,6 +20709,10 @@
     "2026-11-21": [
      1,
      1
+    ],
+    "2026-11-22": [
+     0,
+     0
     ]
    },
    "clones": {
@@ -20623,6 +20963,10 @@
     "2026-11-21": [
      1,
      1
+    ],
+    "2026-11-22": [
+     0,
+     0
     ]
    },
    "referrers": [],
@@ -20888,6 +21232,10 @@
     "2026-11-21": [
      0,
      0
+    ],
+    "2026-11-22": [
+     0,
+     0
     ]
    },
    "clones": {
@@ -21138,6 +21486,10 @@
     "2026-11-21": [
      0,
      0
+    ],
+    "2026-11-22": [
+     1,
+     1
     ]
    },
    "referrers": [
@@ -21409,6 +21761,10 @@
     "2026-11-21": [
      0,
      0
+    ],
+    "2026-11-22": [
+     0,
+     0
     ]
    },
    "clones": {
@@ -21657,6 +22013,10 @@
      1
     ],
     "2026-11-21": [
+     0,
+     0
+    ],
+    "2026-11-22": [
      0,
      0
     ]
@@ -21917,6 +22277,10 @@
     "2026-11-21": [
      0,
      0
+    ],
+    "2026-11-22": [
+     0,
+     0
     ]
    },
    "clones": {
@@ -22165,6 +22529,10 @@
      0
     ],
     "2026-11-21": [
+     0,
+     0
+    ],
+    "2026-11-22": [
      0,
      0
     ]
@@ -22438,6 +22806,10 @@
     "2026-11-21": [
      0,
      0
+    ],
+    "2026-11-22": [
+     0,
+     0
     ]
    },
    "clones": {
@@ -22686,6 +23058,10 @@
      0
     ],
     "2026-11-21": [
+     0,
+     0
+    ],
+    "2026-11-22": [
      0,
      0
     ]
@@ -22946,6 +23322,10 @@
     "2026-11-21": [
      0,
      0
+    ],
+    "2026-11-22": [
+     0,
+     0
     ]
    },
    "clones": {
@@ -23196,6 +23576,10 @@
     "2026-11-21": [
      0,
      0
+    ],
+    "2026-11-22": [
+     0,
+     0
     ]
    },
    "referrers": [
@@ -23209,8 +23593,8 @@
     {
      "path": "/ianrastall/StockfishCompiler",
      "title": "Overview",
-     "count": 4,
-     "uniques": 4
+     "count": 3,
+     "uniques": 3
     },
     {
      "path": "/ianrastall/StockfishCompiler/releases",
@@ -23479,6 +23863,10 @@
     "2026-11-21": [
      0,
      0
+    ],
+    "2026-11-22": [
+     0,
+     0
     ]
    },
    "clones": {
@@ -23729,6 +24117,10 @@
     "2026-11-21": [
      0,
      0
+    ],
+    "2026-11-22": [
+     0,
+     0
     ]
    },
    "referrers": [
@@ -23974,6 +24366,10 @@
     "2026-11-21": [
      0,
      0
+    ],
+    "2026-11-22": [
+     0,
+     0
     ]
    },
    "clones": {
@@ -24190,6 +24586,10 @@
      0
     ],
     "2026-11-21": [
+     0,
+     0
+    ],
+    "2026-11-22": [
      0,
      0
     ]
@@ -24450,6 +24850,10 @@
     "2026-11-21": [
      0,
      0
+    ],
+    "2026-11-22": [
+     0,
+     0
     ]
    },
    "clones": {
@@ -24698,6 +25102,10 @@
      1
     ],
     "2026-11-21": [
+     0,
+     0
+    ],
+    "2026-11-22": [
      0,
      0
     ]
@@ -24965,6 +25373,10 @@
     "2026-11-21": [
      0,
      0
+    ],
+    "2026-11-22": [
+     0,
+     0
     ]
    },
    "clones": {
@@ -25213,6 +25625,10 @@
      0
     ],
     "2026-11-21": [
+     0,
+     0
+    ],
+    "2026-11-22": [
      0,
      0
     ]
@@ -25480,6 +25896,10 @@
     "2026-11-21": [
      2,
      1
+    ],
+    "2026-11-22": [
+     0,
+     0
     ]
    },
    "clones": {
@@ -25730,6 +26150,10 @@
     "2026-11-21": [
      12,
      7
+    ],
+    "2026-11-22": [
+     26,
+     13
     ]
    },
    "referrers": [
@@ -25963,6 +26387,10 @@
     "2026-11-21": [
      0,
      0
+    ],
+    "2026-11-22": [
+     0,
+     0
     ]
    },
    "clones": {
@@ -26167,6 +26595,10 @@
      0
     ],
     "2026-11-21": [
+     0,
+     0
+    ],
+    "2026-11-22": [
      0,
      0
     ]
